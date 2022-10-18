@@ -17,7 +17,9 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
+# uvicorn app:app --reload
+
 @app.get("/")
 def index(request: Request):
     balance = 1
-    return templates.TemplateResponse("resp.html", {"request": request, "balance" : balance})
+    return templates.TemplateResponse("chotaresp.html", {"request": request, "balance" : balance})
