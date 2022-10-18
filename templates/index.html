@@ -2,7 +2,38 @@
 
 {% block content %}
 
-hello guys {{ balance }}
+<div class="ui three column doubling stackable grid container">
+  <div class="column">
+    <div class="ui labeled button" tabindex="0">
+      <div class="ui red button">
+        <i class="heart icon"></i> Like
+      </div>
+      <a class="ui basic red left pointing label">
+        1,048
+      </a>
+    </div>
+    <div class="ui labeled button" tabindex="0">
+      <div class="ui basic blue button">
+        <i class="fork icon"></i> Forks
+      </div>
+      <a class="ui basic left pointing blue label">
+        1,048
+      </a>
+    </div>
+  </div>
+  <div class="column">
+    <p>Col 2</p>
+    <p>Parag 2</p>
+  </div>
+  <div class="column">
+    <p>Col 3</p>
+    <p>Parag 3</p>
+  </div>
+  
+</div>
 
+
+</body>
 
 {% endblock %}
+</html>
