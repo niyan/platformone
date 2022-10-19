@@ -23,3 +23,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 def index(request: Request):
     balance = 1
     return templates.TemplateResponse("chotaresp.html", {"request": request, "balance" : balance})
+
+@app.get("/forum")
+def forum(request: Request):
+    
+    return templates.TemplateResponse("forum.html", {"request": request})
